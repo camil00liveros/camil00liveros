@@ -1,0 +1,186 @@
+/* Estilos generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #0073b1;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Estilos de la cabecera */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo a {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.main-nav {
+	display: flex;
+}
+
+.main-nav li {
+	margin-left: 20px;
+}
+
+.main-nav a {
+	padding: 10px;
+}
+
+.search-form {
+	display: none;
+	margin-left: auto;
+}
+
+.search-form input {
+	border: none;
+	border-bottom: 2px solid #0073b1;
+	padding: 10px;
+	font-size: 16px;
+	width: 200px;
+}
+
+.search-form button {
+	border: none;
+	background-color: #0073b1;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.mobile-nav-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.mobile-nav li {
+	margin-bottom: 10px;
+}
+
+/* Estilos de la sección principal */
+.hero {
+	background-image: url(img/hero-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 100px;
+	text-align: center;
+	color: #fff;
+}
+
+.hero h1 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.cta-btn {
+	display: inline-block;
+	background-color: #0073b1;
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+/* Estilos de la sección de características */
+.features {
+	background-color: #f1f1f1;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.feature-item {
+	max-width: 300px;
+	margin: 0 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.feature-item img {
+	max-width: 100px;
+	margin-bottom: 20px;
+}
+
+.feature-item h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.feature-item p {
+	font-size: 16px;
+}
+
+/* Estilos del pie de página */
+footer {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+}
+
+.footer-links ul {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.footer-links li {
+	margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+	/* Estilos de la cabecera */
+	.main-nav {
+		display: none;
+	}
+
+	.search-form {
+		display: block;
+	}
+
+	.mobile-nav-toggle {
+		display: block;
+	}
+
+	.mobile-nav-toggle span {
+		display: block;
+		height: 2
+  }
+}
